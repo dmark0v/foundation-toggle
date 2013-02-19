@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Foundation toggle buttons</title>
+	<meta name="description" content="Starting template for developement of UI elements for Zurb Foundation framework">
+	<meta name="author" content="Peter Beno, najlepsiwebdesigner@gmail.com">
+  
+	<!-- CDN start -->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- CDN end -->
+	
+	<!-- foundation start -->
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="./foundation/stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="./foundation/stylesheets/app.css">
+	<script src="./foundation/javascripts/modernizr.foundation.js"></script>  
+	<!-- foundation end -->
+	<link rel="stylesheet" href="stylesheets/jquery.foundationToggle.css">
+	<script src="js/jquery.foundationToggle.min.js"></script>
+	<script>
+	$(function(){
+		$('div.foundation-toggle').foundationToggle();	
+	});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1 class="subheading">Foundation toggle buttons</h1>
+		</div>
+		<div class="row">
+			<p>
+				Configurable toggle buttons. Meant for foundation, but should work in plain html, give it a try :)
+			</p>
+			<div class="columns nine">
+				<div class="foundation-toggle">
+					<a class="button success">Active</a>
+					<a class="button">I dont know</a>
+					<a class="button alert">Inactive</a>
+				</div>
+				<div class="foundation-toggle">
+					<a class="button success"><i class="icon-ok"></i></a>
+					<a class="button"><i class="icon-question-sign"></i></a>
+					<a class="button alert"><i class="icon-remove"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

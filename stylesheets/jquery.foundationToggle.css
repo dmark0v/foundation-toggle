@@ -1,0 +1,12 @@
+.foundation-toggle {
+	display:inline-block;
+	width:100px;
+	height:30px;
+	padding:none;
+	position:relative;
+}
+.foundation-toggle .button {
+	display:inline-block;
+	width:100%;
+	position:static;
+}
